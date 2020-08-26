@@ -26,16 +26,15 @@ Player.prototype.rollDice = function () {
   };
   return currentRoll;
 };
-
-
- if (this.totalScore >= 100) {
-  $(".winCard").show();
-  $("span#winningPlayer").text(this.playerId)
-};
+ 
 
 Player.prototype.hold = function () {
   this.totalScore += this.turnScore
   this.turnScore = 0;
+  if(this.totalScore >= 100){
+   $(".winCard").show();
+   $("span#winningPlayer").text(this.playerId)
+  };
   return this.totalScore;
 };
 
@@ -79,6 +78,7 @@ let attachEventListeners = function () {
     $("button.player2Btn").prop("disabled", false);
     // Change current player
     newGame.currentPlayer = 2;
+
   });
 
   //  Event Listener for Player 2 Roll
