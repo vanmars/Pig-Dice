@@ -40,3 +40,5 @@ let diceRoll = function(){
   let roll = Math.ceil(Math.random()*6);
   return roll;
 }
+//user interface logic-------
+
