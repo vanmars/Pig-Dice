@@ -11,6 +11,7 @@ function Player(totalScore,turnScore,playerId){
   this.totalScore = totalScore;
   this.turnScore = turnScore;
   this.playerId =playerId;
+  
 }
 
 Player.prototype.rollDice = function(){
@@ -25,9 +26,17 @@ Player.prototype.rollDice = function(){
 
 }
 
+Player.prototype.hold = function(){
+  this.totalScore += this.turnScore
+  if(this.totalScore >= 100){
+    alert("you have won!!!")
+  }
+  else {
+    return this.totalScore;
+  }
+}
 
-
-let diceRoll = function({
-  let roll = Math.ceil(Math.random()*6));
+let diceRoll = function(){
+  let roll = Math.ceil(Math.random()*6);
   return roll;
-})
+}
