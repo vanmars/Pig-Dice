@@ -35,9 +35,10 @@ To Extend This Project:
 
 ## Known Bugs
 
-There are no known bugs at this time.
+Future iterations could . . .
+* Improve upon the visual layout and design of the UI
+* Clear the turn score, for the double dice game when a user loses a turn
 
-Future iterations could improve upon the visual layout and design of the screen.
 
 ## Technologies Used
 

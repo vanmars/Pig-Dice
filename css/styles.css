@@ -2,6 +2,29 @@ button {
   width: 25%;
 }
 
+/* Hide Player and Score Cards */
+.hideDisplay {
+  display: none;
+}
+
+/* Hide OneDice Card */
+.hideOneDice {
+  display: none;
+}
+
+/* Hide TwoDice Card */
+.hideTwoDice {
+  display: none;
+}
+
+/* Hide Win Card */
 .winCard {
   display: none;
+}
+
+/* Float two columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
 }
